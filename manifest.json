@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "Green Dot",
+	"version": "1.0",
+	"description": "Chrome word replacement extension",
+	"icons": { "16": "images/greendot_16x16.png",
+		"48": "images/greendot_48x48.png",
+		"128": "images/greendot_128x128.png",
+		"512": "images/greendot_512x512.png" },
+		"content_scripts":
+		[
+			{
+				"matches": ["*://*/*"],
+				"js": ["myscript.js"],
+				"run_at": "document_end"
+			}
+		]
+}
